@@ -1,0 +1,53 @@
+body {
+  font-family: cursive;
+
+  text-align: center;
+
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.cookie-box {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 12rem;
+  background-color: #999;
+
+  transition: bottom 0.4s ease-out;
+}
+
+.cookie-box p {
+  margin: 0;
+  margin-top: 0.8rem;
+}
+.cookie-box button {
+  background-color: rgba(42, 185, 29, 0.637);
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  width: 5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cookie-box button.dis-agree {
+  background-color: rgba(185, 112, 29, 0.897);
+}
+
+.cookie-box button:hover {
+  background-color: rgba(42, 185, 29, 0.897);
+}
+
+.cookie-box button.dis-agree:hover {
+  background-color: rgb(185, 112, 29);
+}
+
+.cookie-box button:active {
+  background-color: rgba(42, 185, 29, 0.897);
+  transform: scale(0.9);
+}
+.cookie-box.in {
+  bottom: 1.3rem;
+}
